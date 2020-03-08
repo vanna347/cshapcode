@@ -1,0 +1,157 @@
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body {
+	font-family: Helvetica, Arial, Sans-serif;
+	font-size: 13px;
+	background-color: #fafafa;
+}
+
+.container {
+	width: 600px;
+	margin: 50px auto 20px;
+}
+
+.title {
+	font-size: 30px;
+	font-weight: bold;
+	font-family: "Courier New", Monospace;
+	text-shadow: #ccc 2px 2px 1px;
+	padding-bottom: 5px;
+}
+
+.chat {
+	border: 1px solid #ccc;
+	height: 320px;
+	overflow-y: scroll;
+	background-color: white;
+	border-radius: 10px 0 0 0;
+}
+
+.chat div {
+	margin: 10px 12px 15px;
+	line-height: 20px;
+}
+
+.chat .party {
+	font-weight: bold;
+}
+
+.chat .you {
+	color: red;
+}
+
+.chat .other {
+	color: blue;
+}
+
+.chat .text {
+	
+}
+
+.busy {
+	position: absolute;
+	padding: 3px 0;
+	color: #666;
+	display: none;
+	font-size: 11px;
+}
+
+.input {
+	margin-top: 20px;
+}
+
+.input input {
+	vertical-align: top;
+	float: left;
+	border: 1px solid #ccc;
+	padding: 5px;
+	width: 480px;
+	margin: 0;
+	border-radius: 5px;
+}
+
+.input a {
+	vertical-align: top;
+	float: right;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	background-color: #efefef;
+	padding: 7px 35px;
+	color: black;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.input a:hover {
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+.jchat_message {
+  text-align: left;
+  margin: 10px 0 0 0;
+  overflow-x: auto;
+  overflow-scrolling: touch;
+}
+
+.jchat_user_icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.jchat_message_content {
+  position: relative;
+  text-align: left;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.jchat_user_message {
+  text-align: right;
+  margin: 10px 20px 0 0;
+}
+.jchat_user_message .jchat_message_content {
+  margin-left: 0;
+}
+
+.poyon {
+  -webkit-animation: poyon 0.4s linear 0s 0.8;
+          animation: poyon 0.4s linear 0s 0.8;
+}
+p.jchat_time_stamp {
+  font-size: 12px;
+  color: #c5c5c5;
+  margin: 2px 20px;
+}
+p.jchat_time_stamp_right {
+  text-align: right;
+}
+
+.right_triangle,.left_triangle {
+  position: absolute;
+  top: 10px;
+  content: "";
+  width: 10px;
+  display: inline-block;
+  border-bottom: 10px solid transparent;
+}
+.right_triangle {
+  right: -20px;
+  border-right: 10px solid transparent;
+}
+.left_triangle {
+  left: -20px;
+  border-left: 10px solid transparent;
+}
+
+
